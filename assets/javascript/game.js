@@ -11,7 +11,7 @@ var userScore;
 
 //Function to start the game
 function startGame () {
-    //Generate random numbers for the target number and the four crystal numbers
+    //Generate random numbers for the target number and the four crystals
     target = Math.floor(Math.random() * 102) + 19;
     green = Math.floor(Math.random() * 12) + 1;
     purple = Math.floor(Math.random() * 12) + 1;
@@ -19,8 +19,37 @@ function startGame () {
     yellow = Math.floor(Math.random() * 12) + 1;
     //Set the user's score to zero at the start of the game
     userScore = 0;
+
 }
-//Checks to see what button was clicked and add that button's value to the user's score
+//Run start game function
+startGame();
+
+//Print the values of the jewels in the console for testing
+console.log(green);
+console.log(purple);
+console.log(red);
+console.log(yellow);
+
+$(document).ready(function() {
+    //Checks to see what button was clicked and add that button's value to the user's score
+
+    $("#greenJewel").on("click", function() {
+
+        userScore + green;
+        alert("This jewel is worth " + green +" points.");
+    })
+    $("#purpleJewel").on("click", function() {
+        userScore + purple;
+    })
+    $("#redJewel").on("click", function() {
+        userScore + red;
+    })
+    $("#yellowJewel").on("click", function() {
+        userScore + yellow;
+    })
+
+})
+console.log("User score: " + userScore);
 
 //Check to see if the user's score is equal to or over the target number
 
