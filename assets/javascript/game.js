@@ -23,7 +23,6 @@ function startGame () {
     //Set the user's score to zero at the start of the game
     userScore = 0;
 
-
 }
 //Run start game function
 startGame();
@@ -58,20 +57,27 @@ $(document).ready(function() {
         console.log("User scroe: " + userScore);
     })
 
-    //When a crystal is clicked check to see if the user score is at the target score or above
-    $("#crystals").on("click", function () {
-    //Check to see if the user's score is equal to the target number
-    if (userScore === target) {
-        alert("Congratulations! You reached the target score!");
-        wins++;
-        startGame();
-    }
 
-    //Check to see if the user goes over the target score
-    if(userScore > target) {
-        alert("Oh no! You passed the target score! Give it another try!");
-        loses++;
-        startGame();
-    }
+    //Display the user's score for the user to see
+    // $("#userSum").append(userScore);
+
+    //When a crystal is clicked check to see if the user score is at the target score or above
+    $(".crystals").on("click", function () {
+
+        //Displays the user's score
+        $("#userSum").text("Your current score is " + userScore);
+        //Check to see if the user's score is equal to the target number
+        if (userScore === target) {
+            alert("Congratulations! You reached the target score!");
+            wins++;
+            startGame();
+        }
+
+        //Check to see if the user goes over the target score
+        if(userScore > target) {
+            alert("Oh no! You passed the target score! Give it another try!");
+            loses++;
+            startGame();
+        }
     })
 })
