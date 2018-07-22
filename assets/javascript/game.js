@@ -12,29 +12,34 @@ var userScore;
 var wins = 0;
 var loses = 0;
 
-//Function to start the game
-function startGame () {
-    //Generate random numbers for the target number and the four crystals
-    target = Math.floor(Math.random() * 102) + 19;
-    green = Math.floor(Math.random() * 12) + 1;
-    purple = Math.floor(Math.random() * 12) + 1;
-    red = Math.floor(Math.random() * 12) + 1;
-    yellow = Math.floor(Math.random() * 12) + 1;
-    //Set the user's score to zero at the start of the game
-    userScore = 0;
-    //Print the values of the jews in the console for testing
-    console.log(target);
-    console.log(green);
-    console.log(purple);
-    console.log(red);
-    console.log(yellow);
-
-    $("#endNumber").html("Your target number is " + target);
-}
-//Run start game function
-startGame();
-
 $(document).ready(function() {
+    //Function to start the game
+    function startGame () {
+        //Generate random numbers for the target number and the four crystals
+        target = Math.floor(Math.random() * 102) + 19;
+        green = Math.floor(Math.random() * 12) + 1;
+        purple = Math.floor(Math.random() * 12) + 1;
+        red = Math.floor(Math.random() * 12) + 1;
+        yellow = Math.floor(Math.random() * 12) + 1;
+
+        //Set the user's score to zero at the start of the game
+        userScore = 0;
+        //Print the values of the jews in the console for testing
+        console.log(target);
+        console.log(green);
+        console.log(purple);
+        console.log(red);
+        console.log(yellow);
+
+        //Display the target score for the user
+        $("#endNumber").text("The target number is " + target);
+        //Displays the user's score
+        $("#userSum").text("Your current score is " + userScore);
+    }
+    //Run start game function
+    startGame();
+
+
     //Display the user's score and target number
     // document.getElementById("endNumber").innerHTML = "The target score is" + target ".";
     // document.getElementById("userSum").innerHTML = userScore;
@@ -71,6 +76,8 @@ $(document).ready(function() {
         if (userScore === target) {
             alert("Congratulations! You reached the target score!");
             wins++;
+            //Displays the user's score
+            // $("#userSum").text("Your current score is 0");
             $("#wins").text("Wins: " + wins);
             startGame();
         }
