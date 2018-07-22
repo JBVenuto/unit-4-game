@@ -4,6 +4,7 @@ body {
 }
 
 .header {
+    border-radius: 15px;
     background-color: #F59275;
     width: 700px;
     margin-top: 15px;
@@ -24,6 +25,7 @@ body {
 }
 
 .directions {
+    border-radius: 15px;
     background-color: #C7FEEF;
     font-size: 18px;
     margin-bottom: 10px;
@@ -43,16 +45,14 @@ body {
 }
 
 #overallScore {
+    border-radius: 15px;
+    /* height: 75px; */
     /* margin-top: 40px; */
     background-color: #F59275;
     color: white;
     font-size: 24px;
     padding-left: 10px;
     padding-bottom: 10px;
-}
-
-#wins {
-/* margin-top: 10px; */
 }
 
 .crystals {
@@ -72,4 +72,3 @@ body {
 #yellowJewel {
     float: left;
 }
-
