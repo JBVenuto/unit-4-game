@@ -10,37 +10,48 @@
     </head>
 
     <body>
-        <div class="header"><h1>Crystal Collector</h1><hr></div>
+        <div class="header"><h1>Crystal Collector</h1></div>
+
         <div class="container">
+
+            <!-- Directions on how to play the game -->
             <div class="directions">
                 <p>At the start of the game you are given a target number. Your goal is to get your score to the target number without going over.</p>
                 <p>To add to your score you need to click on the jewels belew. Each jewel is randomly given a point value. However, the amount of points that each jewel is worth is hidden from you.</p>
                 <p>When you get to the target number or go over you will be given a new target number and a new set of points for each jewel.</p>
                 <p>Think you can get to the target without going over?</p>
             </div>
-            <div class="endNumber">
-                <p>The target number to get is </p>
-            </div>
+
+            <!-- Images of the crystals that will have a point value that gets added when the user clicks on them -->
             <div class="crystals">
-            <div id="greenJewel">
-                <img src="assets/images/green.jpg" alt="Green Jewel" style="width:75px;height:75px;">
-            </div>
-            <div id="purpleJewel">
-                <img src="assets/images/purple.jpg" alt="Purple Jewel" style="width:75px;height:75px;">
-            </div>
-            <div id="redJewel">
-                <img src="assets/images/red.jpg" alt="Red Jewel" style="width:75px;height:75px;">
-            </div>
-            <div id="yellowJewel">
-                <img src="assets/images/yellow.jpg" alt="Yellow Jewel" style="width:75px;height:75px;"  >
+                <div id="greenJewel">
+                    <img src="assets/images/green.jpg" alt="Green Jewel" style="width:75px;height:75px;">
+                </div>
+                <div id="purpleJewel">
+                    <img src="assets/images/purple.jpg" alt="Purple Jewel" style="width:75px;height:75px;">
+                </div>
+                <div id="redJewel">
+                    <img src="assets/images/red.jpg" alt="Red Jewel" style="width:75px;height:75px;">
+                </div>
+                <div id="yellowJewel">
+                    <img src="assets/images/yellow.jpg" alt="Yellow Jewel" style="width:75px;height:75px;"  >
+                </div>
             </div>
 
+            <!-- This keeps track of the target number and the user's current score -->
+            <div class="currentGame">
+                <div class="endNumber">
+                    <p>The target number is </p><hr>
+                </div>
+                <div id="userSum">
+                    <p>Your current score is </p>
+                </div>
             </div>
-            <div id="userSum">
-                <p>You current score is </p>
-            </div>
-            <div id="wins">
 
+            <!-- This keeps track of wins and loses -->
+            <div id="wins"> 
+                <p>Wins: </p><hr>
+                <p>Loses: </p>
             </div>
         </div>
     </body>

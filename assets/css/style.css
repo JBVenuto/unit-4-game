@@ -2,13 +2,58 @@ body {
     background-image: url("../images/background3.jpg");
    
 }
+
+.header {
+    background-color: #F59275;
+    width: 700px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
 .container {
-    width: 800px;
+    width: 700px;
     margin-right: auto;
     margin-left: auto;
 }
+
+.directions {
+    background-color: #C7FEEF;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+
+.currentGame {
+    background-color: #C3D6D0;
+    width: 390px;
+    height: 75px;
+    float: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+#wins {
+    margin-top: 10px;
+    background-color: #F59275;
+    color: white;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+
 .crystals {
     background-color: paleturquoise;
+    margin-bottom: 10px;
 }
 
 #greenJewel {
@@ -23,3 +68,4 @@ body {
 #yellowJewel {
     float: left;
 }
+
