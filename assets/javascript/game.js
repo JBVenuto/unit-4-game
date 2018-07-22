@@ -22,17 +22,17 @@ function startGame () {
     yellow = Math.floor(Math.random() * 12) + 1;
     //Set the user's score to zero at the start of the game
     userScore = 0;
+    //Print the values of the jews in the console for testing
+    console.log(target);
+    console.log(green);
+    console.log(purple);
+    console.log(red);
+    console.log(yellow);
 
+    $("#endNumber").html("Your target number is " + target);
 }
 //Run start game function
 startGame();
-
-//Print the values of the jewels in the console for testing
-console.log(target);
-console.log(green);
-console.log(purple);
-console.log(red);
-console.log(yellow);
 
 $(document).ready(function() {
     //Display the user's score and target number
@@ -66,10 +66,12 @@ $(document).ready(function() {
 
         //Displays the user's score
         $("#userSum").text("Your current score is " + userScore);
+
         //Check to see if the user's score is equal to the target number
         if (userScore === target) {
             alert("Congratulations! You reached the target score!");
             wins++;
+            $("#wins").text("Wins: " + wins);
             startGame();
         }
 
@@ -77,6 +79,7 @@ $(document).ready(function() {
         if(userScore > target) {
             alert("Oh no! You passed the target score! Give it another try!");
             loses++;
+            $("#loses").text("Loses: " + loses);
             startGame();
         }
     })

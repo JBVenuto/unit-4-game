@@ -40,7 +40,7 @@
 
             <!-- This keeps track of the target number and the user's current score -->
             <div class="currentGame">
-                <div class="endNumber">
+                <div id="endNumber">
                     <p>The target number is </p>
                 </div><hr>
                 <div id="userSum">
@@ -49,9 +49,13 @@
             </div>
 
             <!-- This keeps track of wins and loses -->
-            <div id="wins"> 
-                <p>Wins: </p><hr>
-                <p>Loses: </p>
+            <div id="overallScore"> 
+                <div id="wins">
+                    <p>Wins: 0</p>
+                </div><hr>
+                <div id="loses">
+                    <p>Loses: 0</p>
+                </div>
             </div>
         </div>
     </body>
