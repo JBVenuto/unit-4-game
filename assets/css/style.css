@@ -1,3 +1,25 @@
+body {
+    background-image: url("../images/background3.jpg");
+   
+}
+.container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.crystals {
+    background-color: paleturquoise;
+}
+
 #greenJewel {
-    background-color: green;
+    float: left;
+}
+#purpleJewel {
+    float: left;
+}
+#redJewel {
+    float: left;
+}
+#yellowJewel {
+    float: left;
 }
