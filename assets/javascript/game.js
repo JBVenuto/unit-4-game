@@ -34,22 +34,26 @@ $(document).ready(function() {
     //Checks to see what button was clicked and add that button's value to the user's score
 
     $("#greenJewel").on("click", function() {
-
-        userScore + green;
-        alert("This jewel is worth " + green +" points.");
+        userScore += green;
+        console.log("User scroe: " + userScore);
     })
     $("#purpleJewel").on("click", function() {
-        userScore + purple;
+        userScore += purple;
+        console.log("User scroe: " + userScore);
+
     })
     $("#redJewel").on("click", function() {
-        userScore + red;
+        userScore += red;
+        console.log("User scroe: " + userScore);
+
     })
     $("#yellowJewel").on("click", function() {
-        userScore + yellow;
+        userScore += yellow;
+        console.log("User scroe: " + userScore);
+
     })
 
 })
-console.log("User score: " + userScore);
 
 //Check to see if the user's score is equal to or over the target number
 
