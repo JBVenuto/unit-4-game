@@ -78,7 +78,7 @@ $(document).ready(function() {
             wins++;
             //Displays the user's score
             // $("#userSum").text("Your current score is 0");
-            $("#wins").text("Wins: " + wins + "<hr>");
+            $("#wins").html("Wins: " + wins + "<hr>");
             startGame();
         }
 
