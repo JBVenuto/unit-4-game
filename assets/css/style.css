@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/background3.jpg");
-   
+    background-color: #C7FEEF;
 }
 
 .header {
@@ -41,20 +41,38 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
     padding-left: 10px;
-
+    clear: auto;
 }
 
-#overallScore {
+#overallScore { 
+    position: relative;
     border-radius: 15px;
     /* height: 75px; */
-    /* margin-top: 40px; */
+    margin-top: 10px;
     background-color: #F59275;
     color: white;
     font-size: 24px;
+    padding-top: 10px;
     padding-left: 10px;
-    padding-bottom: 10px;
+    overflow: auto;
 }
-
+#wins {
+    position: relative;
+    height: 35px;
+    /* background-color: red; */
+}
+#winCount {
+    position: relative;
+}
+#lossCount {
+    position: relative;
+}
+#loses {
+    position: relative;
+    padding-top: 10px;
+    height: 35px;
+    /* background-color: blue; */
+}
 .crystals {
     background-color: paleturquoise;
     margin-bottom: 10px;
