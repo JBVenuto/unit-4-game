@@ -8,4 +8,4 @@ In this game the user will be given a target number that they need to reach. To 
 This game was written with HTML5, CSS3, JavaScript, and jQuery 3.3.1
 -------------------------------------------
 ##Screenshot
-![screenshot](screenshot.jpg)
+![screenshot](assets/images/screenshot.jpg)
